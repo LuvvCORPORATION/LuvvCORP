@@ -1,0 +1,248 @@
+{
+    //Upload a file from the archive along the way:
+    //C:/Users/USERNAME/AppData/Roaming/Code/User/snippets
+    // https://js.plaguecheat.cc/api/g_cheat
+     
+     "g_cheat.notify()": {
+        "prefix": "g_cheat.notify()",
+		"body": "g_cheat.notify(\"${1:Hello World}\")",
+        "description": "Displays the specified text on the screen and in the console | g_cheat.notify(text: string)"
+     },
+
+     "g_cheat.get_username()": {
+         "prefix": "g_cheat.get_username()",
+         "body": "g_cheat.get_username()",
+         "description": "Returns the user name | string"
+     },
+
+     "g_cheat.get_uid()": {
+        "prefix": "g_cheat.get_uid()",
+        "body": "g_cheat.get_uid()",
+        "description": "Returns the user uid | string"
+    },
+
+    "g_cheat.set_clan_tag()": {
+        "prefix": "g_cheat.set_clan_tag()",
+        "body": "g_cheat.set_clan_tag(\"${1:Plago}\")",
+        "description": "Returns the user uid | string"
+    },
+
+    // https://js.plaguecheat.cc/api/g_entity
+
+    "g_entity.get_local_player()": {
+        "prefix": "g_entity.get_local_player()",
+		"body": "g_entity.get_local_player()",
+        "description": "returns the index for local player if there is one | number"
+     },
+
+     "g_entity.get_netvar()": {
+        "prefix": "g_entity.get_netvar()",
+		"body": "g_entity.get_netvar()",
+        "description": "returns the value for the desired netvar"
+     },
+
+     "g_entity.set_netvar()": {
+        "prefix": "g_entity.set_netvar()",
+		"body": "g_entity.set_netvar()",
+        "description": "sets the netvar to a desired value"
+     },
+
+     "g_entity.get_desync_delta()": {
+        "prefix": "g_entity.get_desync_delta()",
+		"body": "g_entity.get_desync_delta(g_entity.get_local_player())",
+        "description": "gets the maximum desync delta for the wanted entity"
+     },
+     
+     "g_entity.get_name()": {
+        "prefix": "g_entity.get_name()",
+		"body": "g_entity.get_name(g_entity.get_local_player())",
+        "description": "gets the name for the wanted entity"
+     },
+
+     
+     "g_entity.is_valid()": {
+        "prefix": "g_entity.is_valid()",
+		"body": "g_entity.is_valid(g_entity.get_local_player())",
+        "description": "check if wanted entity is valid"
+     },
+
+     "g_entity.get_entity_from_handle()": {
+        "prefix": "g_entity.get_entity_from_handle()",
+		"body": "g_entity.get_entity_from_handle()",
+        "description": "returns the index for the wanted entity from handle | handle"
+     },
+
+     
+     "g_entity.is_dormant()": {
+        "prefix": "g_entity.is_dormant()",
+		"body": "g_entity.is_dormant(g_entity.get_local_player())",
+        "description": "gets the dormancy status for the wanted entity"
+     },
+
+     // https://js.plaguecheat.cc/api/g_render
+
+     "g_render.create_font()": {
+        "prefix": "g_render.create_font()",
+		"body": "g_render.create_font()",
+        "description": "creates font | identifier name, font name, size, width, flags"
+     },
+
+     "g_render.get_screen_size()": {
+        "prefix": "g_render.get_screen_size()",
+		"body": "g_render.get_screen_size()",
+        "description": "returns screen width and height | x = g_render.get_screen_size()[0]\ny = g_render.get_screen_size()[1]"
+     },
+
+     "g_render.draw_rectangle_filled()": {
+        "prefix": "g_render.draw_rectangle_filledt()",
+		"body": "g_render.draw_rectangle_filled()",
+        "description": "draws a filled rectangle | g_render.draw_rectangle_filled(x, y, w, h, r, g, b, a)"
+     },
+
+     "g_render.draw_string()": {
+        "prefix": "g_render.draw_string()",
+		"body": "g_render.draw_string()",
+        "description": "draws a string | g_render.draw_string(x, y, text, identifier name, r, g, b, a)"
+     },
+
+     "g_render.get_text_width()": {
+        "prefix": "g_render.get_text_width()",
+		"body": "g_render.get_text_width()",
+        "description": "returns the text width | g_render.get_text_width(text, font)"
+     },
+
+     // https://js.plaguecheat.cc/api/g_menu
+     
+     "g_menu.add_checkbox()": {
+        "prefix": "g_menu.add_checkbox()",
+		"body": "g_menu.add_checkbox()",
+        "description": "adds a bindable checkbox to the menu | g_menu.add_checkbox(name: string, varname: string)"
+        
+     },
+
+     "g_menu.add_slider()": {
+        "prefix": "g_menu.add_slider()",
+		"body": "g_menu.add_slider()",
+        "description": "adds a slider to the menu | g_menu.add_slider(name: string, varname: string, min_value: number, max_value: number)"
+        
+     },
+
+     "g_menu.add_combo()": {
+        "prefix": "g_menu.add_combo()",
+		"body": "g_menu.add_combo()",
+        "description": "adds a slider to the menu | g_menu.add_combo(name: string, varname: string, optionsname: option)"
+        
+     },
+
+     "g_menu.get_config_value()": {
+        "prefix": "g_menu.get_config_value()",
+		"body": "g_menu.get_config_value()",
+        "description": "returns a config value | g_menu.get_config_value(varname: string)"
+        
+     },
+
+     "g_menu.set_config_value_bool()": {
+        "prefix": "g_menu.set_config_value_bool()",
+		"body": "g_menu.set_config_value_bool()",
+        "description": "set bool config value | g_menu.set_config_value_bool(varname: string, value: true/false)"
+        
+     },
+
+     "g_menu.set_config_value_int()": {
+        "prefix": "g_menu.set_config_value_int()",
+		"body": "g_menu.set_config_value_int()",
+        "description": "set int config value | g_menu.set_config_value_int(varname: string, value: min_value 0)"
+        
+     },
+
+     
+     "g_menu.add_config_value_int()": {
+        "prefix": "g_menu.add_config_value_int()",
+		"body": "g_menu.add_config_value_int()",
+        "description": "adds a config member as int | g_menu.add_config_value_int(varname: string, default value: string)"
+        
+     },
+
+     
+     "g_menu.add_config_value_bool()": {
+        "prefix": "g_menu.add_config_value_bool()",
+		"body": "g_menu.add_config_value_bool()",
+        "description": "adds a config member as bool | g_menu.add_config_value_bool(varname: string, default value: true/false)"
+        
+     },
+
+     // https://js.plaguecheat.cc/api/g_globals
+
+     "g_globals.get_realtime()": {
+        "prefix": "g_globals.get_realtime()",
+		"body": " g_globals.get_realtime()",
+        "description": "returns realtime"
+        
+     },
+ 
+     
+     "g_globals.get_curtime()": {
+        "prefix": "g_globals.get_curtime()",
+		"body": "g_globals.get_curtime()",
+        "description": "returns curtime"
+        
+     },
+
+     "g_globals.get_tickcount()": {
+        "prefix": "g_globals.get_tickcount()",
+		"body": "g_globals.get_tickcount()",
+        "description": "returns tickcount"
+        
+     },
+
+     "g_globals.get_tickrate()": {
+        "prefix": "g_globals.get_tickrate()",
+		"body": "g_globals.get_tickrate()",
+        "description": "returns the tickrate of the current server"
+        
+     },
+
+     "g_globals.get_frame_stage()": {
+        "prefix": "g_globals.get_frame_stage()",
+		"body": "g_globals.get_frame_stage()",
+        "description": "returns the current frame stage"
+        
+     },
+
+     "g_globals.get_choked_commands()": {
+        "prefix": "g_globals.get_choked_commands()",
+		"body": "g_globals.get_choked_commands()",
+        "description": "returns current choked commands"
+        
+     },
+
+     "g_globals.get_latency()": {
+        "prefix": "g_globals.get_latency()",
+		"body": "g_globals.get_latency()",
+        "description": "returns current latency to server"
+        
+     },
+
+     "g_globals.is_valve_server()": {
+        "prefix": "g_globals.is_valve_server()",
+		"body": "g_globals.is_valve_server()",
+        "description": "returns true if you are on a valve server"
+        
+     },
+
+     // https://js.plaguecheat.cc/api/g_tickbase
+
+     "g_tickbase.get_ticks_allowed()": {
+        "prefix": "g_tickbase.get_ticks_allowed()",
+		"body": "g_tickbase.get_ticks_allowed()",
+        "description": "returns the current ticks allowed"
+        
+     },
+
+     "g_tickbase.shift_tickbase()": {
+        "prefix": "g_tickbase.shift_tickbase()",
+		"body": "g_tickbase.shift_tickbase()",
+        "description": "shifts the tickbase"
+        
+     }
+}
